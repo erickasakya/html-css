@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    font-family: sans-serif, Arial, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-size: 13px;
+}
+.navbar-custom {
+    background-color: #0BA6E9;
+}
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff;;
+}
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+.search {
+    border: 1px solid #3ABDF8;
+    border-radius: 5px;
+    color: #CBE9FA;
+    padding: 2px 13px 2px 30px;
+    background-color: #3ABDF8;
+}
+.search-icon {
+    position: relative;
+    top: 2px;
+    left: 23px;
+    width: 18px; 
+}
+nav img{
+    margin: 0px 3px 0px 3px;
+}
+.breadcrumb{
+    border-bottom: 1px solid #E7E8EC;
+    background-color: #ffffff;
+}
+.breadcrumb a{
+    color: #878D98;
+}
+section{
+    border-bottom: 1px solid #ECEDF0;
+    height: 50px;
+}
+.form-input{
+    height: 30px;
+    font-size: 13px;
+    color: #878D98;
+}
+.btn-save{
+    background-color: #0BA6E9;
+    color: #ffffff;
+    border: #0BA6E9;
+}
+.btn-edited{
+    border: 1px solid #d0d0d4;
+}

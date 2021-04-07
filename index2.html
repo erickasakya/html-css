@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="#"><img id="logo" src="./imgs/logo.png" alt="logo" width="35" height="30"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Jobs</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Applicants</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Company</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <img class="search-icon" src="./imgs/search.png" />
+            <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search" value="Search" size="26">
+        </form>
+        
+        <!-- notification icon -->
+        <img id="notification-icon" src="./imgs/notification.png" alt="notification" width="20" height="16" class="rounded-circle">
+        <!-- profile photo -->
+        <img id="profile-pic" src="./imgs/avatar2.png" alt="Avatar2" width="25" height="25" class="rounded-circle">
+
+        </div>
+    </nav>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#"><img src="./imgs/home-icon.png" alt="" width="20" height="20"></a></li>
+          <li class="breadcrumb-item"><a href="#">Project</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Project Nero</li>
+        </ol>
+    </nav>
+
+    <div class="container col-lg-4">
+        <h6 style="color: #3B4654;">Project Settings</h6>
+        <p>Let's get started by filling in the information below to create your new project.</p>
+        <form action="#" class="">
+            <div class="form-group">
+                <label for="project_name">Project Name</label>
+                <input type="text" id="project_name" value="Project Nero" class="form-control p-2 form-input">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" cols="30" rows="3"></textarea>
+            </div>
+            <div class="form-group m-lg-0">
+                <label for="add_member">Add Team Members</label><br/>
+                <input type="email" name="member_email" id="add_member" placeholder="Email address" class="form-control form-input float-lg-left col-lg-9 " width="80%">
+                <input id="add_member_btn" type="button" value="+ Add" class="btn btn-outline-secondary btn-sm float-lg-right col-lg-2 btn-edited">
+                
+                <div class="clearfix"></div>
+                <section class="mt-3">
+                    <img class="rounded-circle float-left " src="./imgs/avatar2.png" width="30" height="30" alt="">
+                    <p class="float-left">Calvin Hawkins <small class="form-text text-muted">calvin.hawkins@example.com</small></p>
+                </section>
+                <div class="clearfix"></div>
+                <section>
+                    <img class="rounded-circle float-left" src="./imgs/avatar1.png" width="30" height="30" alt="">
+                    <p class="float-left">Bessie Richards
+                    <small class="form-text text-muted">bessie.richards@example.com</small></p>
+                </section>
+                <div class="clearfix"></div>
+                <section>
+                    <img class="rounded-circle float-left" src="./imgs/avatar2.png" width="30" height="30" alt="">
+                    <p class="float-left">Floyd Black
+                    <small class="form-text text-muted">floyd.black@example.com</small></p>
+                </section>
+                <div class="clearfix"></div>
+            </div>
+            
+            <h6 class="m-0">Privacy</h6>
+            <div class="card">
+                <ul class="list-group list-group-flush ">
+                  <li class="list-group-item p-2 selected_radio">
+                    <input type="radio" id="option1" checked name="gender" value="option1">
+                    <label for="option1">Public access <small class="form-text text-muted">This project would be available to anyone who has the link</small></label>
+                  </li>
+                  <li class="list-group-item p-2">
+                    <input type="radio" id="option2" name="gender" value="option2">
+                    <label for="option2">Private to Project Members  <small class="form-text text-muted">Only members of this project would be able to access</small> </label>
+                  </li>
+                  <li class="list-group-item p-2">
+                    <input type="radio" id="option3" name="gender" value="option3">
+                    <label for="option3">Private to you <small class="form-text text-muted">You are the only one able to access this project</small></label>
+                  </li>
+                </ul>
+              </div>
+
+            <div class="form-group">
+                <label for="tag">Tags</label>
+                <input type="text" name="" id="tag" class="form-control form-input">
+            </div>
+
+            <div class="float-right">
+                <input  type="button" value="Cancel" class="btn btn-outline-secondary  btn-sm mr-lg-3 btn-edited">
+                <input type="button" value="Create this project" class="btn btn-primary btn-outline-primary btn-sm btn-save">
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js" ></script>
+</body>
+</html>

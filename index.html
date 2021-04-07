@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="topnav">
+        <!-- log goes here -->
+        <img id="logo" src="./imgs/logo.png" alt="logo" width="35" height="30">
+        <!-- menu links -->
+        <a class="active" href="#">Dashboard</a>
+        <a href="#">Jobs</a>
+        <a href="#">Applicants</a>
+        <a href="#">Company</a>
+
+        <div class="wrapper">
+            <!-- search box -->
+            <img class="search-icon" src="./imgs/search.png" />
+            <input type="text" name="ser" class="search" placeholder="Search" value="Search" size="26">
+            <!-- notification icon -->
+            <img id="notification-icon" src="./imgs/notification.png" alt="notification" width="20" height="16">
+            <!-- profile photo -->
+            <img id="profile-pic" src="./imgs/avatar2.png" alt="Avatar2" width="25" height="25">
+        </div>
+    </div>
+
+    <div class="breadcrumb">
+        <img src="./imgs/home-icon.png" alt="" width="20" height="20">
+        <a href="#">Projects</a> 
+        <a href="#">Project Nero</a>
+    </div>
+
+    <div class="content">
+        <h4 style="color: #3B4654;">Project Settings</h4>
+        <p>Let's get started by filling in the information below to create your new project.</p>
+        <form action="#">
+            <div class="form-group">
+                <label for="project_name">Project Name</label>
+                <input type="text" id="project_name" value="Project Nero" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" cols="30" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="add_member">Add Team Members</label><br/>
+                <input type="email" name="member_email" id="add_member" placeholder="Email address" class="form-input">
+                <input id="add_member_btn" type="button" value="+ Add" class="form-input btn-small">
+                
+                <!-- list of mermbers -->
+                <section>
+                    <img src="./imgs/avatar2.png" width="30" height="30" alt="">
+                    <p>Calvin Hawkins</p><br>
+                    <small class="small-text">calvin.hawkins@example.com</small>
+                </section>
+                <section>
+                    <img src="./imgs/avatar1.png" width="30" height="30" alt="">
+                    <p>Bessie Richards</p><br>
+                    <small class="small-text">bessie.richards@example.com</small>
+                </section>
+                <section>
+                    <img src="./imgs/avatar2.png" width="30" height="30" alt="">
+                    <p>Floyd Black</p><br>
+                    <small class="small-text">floyd.black@example.com</small>
+                </section>
+                <!-- end of list  -->
+            </div>
+
+            <div class="form-group">
+                <label for="privacy">Privacy</label>
+                <div class="privacy-option">
+                    <div class="row">
+                        <input type="radio" id="option1" name="gender" value="option1">
+                        <label for="option1">Public access <br> <p class="small-text">This project would be available to anyone who has the link</p></label>
+                    </div>
+                    <div class="row">
+                        <input type="radio" id="option2" name="gender" value="option2">
+                        <label for="option2">Private to Project Members <br> <p class="small-text">Only members of this project would be able to access</p> </label>
+                    </div>
+                    <div class="row">
+                        <input type="radio" id="option3" name="gender" value="option3">
+                        <label for="option3">Private to you <br> <p class="small-text">You are the only one able to access this project</p></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="tag">Tags</label>
+                <input type="text" name="" id="tag" class="form-input">
+            </div>
+
+            <div class="closebutton">
+                <input type="button" style="margin-left: 10px;" value="Create this project" class="form-input btn-primary">
+                <input  type="button" value="Cancel" class="form-input btn-small">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
